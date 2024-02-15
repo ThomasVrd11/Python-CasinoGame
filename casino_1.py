@@ -60,9 +60,11 @@ def main():
     balance = deposit()
     lines = get_number_of_lines()
     bet = get_bet()
-    print(balance, lines, bet)
-
-
+    total_bet = lines * bet
+    print(f"You have deposited €{balance}.")
+    print(f"You are betting on {lines} lines. Total bet is equal to €€{total_bet}.")
+    print(balance, lines, bet, total_bet)
+    print("Good luck!")
 
 
 
